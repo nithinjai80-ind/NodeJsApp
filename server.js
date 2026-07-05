@@ -2,39 +2,20 @@ const express = require("express");
 
 const app = express();
 
-// Elastic Beanstalk automatically provides PORT
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
-// Middleware
 app.use(express.json());
 
-// Home Route
 app.get("/", (req, res) => {
-    res.send(`
-        <h1>Node.js Application</h1>
-        <h2>Deployment Successful 🚀</h2>
-        <p>This application is running successfully.</p>
-    `);
+    res.send("<h1>Node.js Application Running Successfully 🚀</h1>");
 });
 
-// Health Check
 app.get("/health", (req, res) => {
     res.json({
-        status: "UP",
-        message: "Application is healthy"
+        status: "UP"
     });
 });
 
-// API Route
-app.get("/api/info", (req, res) => {
-    res.json({
-        application: "Node.js Demo",
-        version: "1.0.0",
-        environment: process.env.NODE_ENV || "development"
-    });
-});
-
-// Start Server
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server started on port ${PORT}`);
 });
