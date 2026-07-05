@@ -4,18 +4,14 @@
 
 npm install
 
-## Run Application
+## Run
 
 npm start
 
-## Application URL
+## URL
 
-http://localhost:3000
+http://localhost:8080
 
-## Health Check
+## Health Endpoint
 
-http://localhost:3000/health
-
-## API
-
-http://localhost:3000/api/info
+http://localhost:8080/health
