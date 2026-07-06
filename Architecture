@@ -1,0 +1,17 @@
+Architecture
+GitHub Repository
+        │
+        ▼
+   Jenkins Pipeline
+        │
+        ▼
+ Checkout Source Code
+        │
+        ▼
+ Build Application
+        │
+        ▼
+ Test Application
+        │
+        ▼
+ Deploy Application
