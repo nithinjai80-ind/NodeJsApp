@@ -1,10 +1,10 @@
 Project Structure
 
 nodejs-app/
-│── package.json
-│── server.js
-│── .gitignore
-└── README.md
+ ── package.json
+ ── server.js
+ ── .gitignore
+ ── README.md
 
 
 
