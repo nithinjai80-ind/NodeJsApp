@@ -1,3 +1,13 @@
+Project Structure
+
+nodejs-app/
+│── package.json
+│── server.js
+│── .gitignore
+└── README.md
+
+
+
 # Node.js Demo Application
 
 ## Install Dependencies
